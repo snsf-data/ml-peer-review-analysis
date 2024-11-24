@@ -1,0 +1,58 @@
+# ignore any possible data files
+*.xls
+*.xlsx
+*.csv
+*.rds
+*.rdata
+*.rda
+*.xml
+*.tab
+*.tar
+*.zip
+*.7z
+*.txt
+*.dat
+*.db
+*.dbf
+*.mdb
+*.sav
+*.sql
+
+# ignore pdfs and html files
+*.pdf
+*.html
+
+# Temporary files created by R markdown
+*.log
+*.aux
+*.out
+*.utf8.md
+*.knit.md
+
+# knitr and R markdown default cache directories, also py cache
+*_cache/
+/cache/
+*__pycache__/
+
+# R files
+*.Rproj.user
+*.Rhistory
+*.Rapp.history
+*.RData
+*.Ruserdata
+*.Rprof
+*.Rcheck
+
+# macOS files
+*.DS_Store
+
+# graphic files
+*.png
+*.jpeg
+*.jpg
+
+# fine-tuned transformer files
+*.json
+*.bin
+*.pkl
+*.safetensors
