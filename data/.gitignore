@@ -1,0 +1,9 @@
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+!data_coded/
+!data_to_code/
+!data_classified/
+!data_cross_validation/
+!data_llm/
