@@ -18,6 +18,9 @@
 *.sav
 *.sql
 
+# exception for requirements file
+!requirements.txt
+
 # ignore pdfs and html files
 *.pdf
 *.html

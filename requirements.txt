@@ -1,0 +1,12 @@
+numpy>=1.26.4
+pandas>=2.2.2
+pyreadr>=0.5.0
+datasets>=2.20.0
+evaluate>=0.4.2
+scikit-learn>=1.5.1
+torch>=2.3.1
+transformers>=4.41.2
+tasknet>=1.54.0
+tasksource>=0.0.45
+bitsandbytes>=0.43.1
+accelerate>=0.31.0
