@@ -6,6 +6,8 @@ following research paper:
 
 **A Supervised Machine Learning Approach for Assessing Grant Peer Review Reports**
 
+available on [arXiv](https://arxiv.org/abs/2411.16662) as a preprint.
+
 The paper develops a pipeline to analyze the texts of grant peer review
 reports using Natural Language Processing (NLP) and machine learning (ML).
 It defines 12 categories reflecting content of grant peer review reports which
@@ -112,6 +114,14 @@ git clone https://github.com/snsf-data/ml-peer-review-analysis.git
 The required `Python` modules can be installed by navigating to the root of the
 cloned project and executing the following command: `pip install -r requirements.txt`.
 The implementation relies on `Python` version 3.12.4.
+
+## Resources
+
+- [arXiv preprint](https://arxiv.org/abs/2411.16662)
+- [data management plan](https://doi.org/10.46446/DMP-peer-review-assessment-ML)
+- [annotation codebook](https://doi.org/10.46446/Codebook-peer-review-assessment-ML)
+- [Hugging Face models](https://huggingface.co/snsf-data)
+- archived [code](https://doi.org/10.5281/zenodo.14215058) and [models](https://doi.org/10.5281/zenodo.14217855)
 
 ## Contact
 
