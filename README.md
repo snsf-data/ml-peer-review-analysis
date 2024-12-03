@@ -115,6 +115,36 @@ The required `Python` modules can be installed by navigating to the root of the
 cloned project and executing the following command: `pip install -r requirements.txt`.
 The implementation relies on `Python` version 3.12.4.
 
+## Usage
+
+The code snippet below demonstrates a minimal example for deployment of the
+fine-tuned model for classifying if methods are mentioned in the grant peer review
+texts using the transformer's text classification pipeline.
+
+```python
+# import transformers library
+import transformers
+
+# load tokenizer from specter2_base - the base model
+tokenizer = transformers.AutoTokenizer.from_pretrained("allenai/specter2_base")
+
+# load the SNSF fine-tuned model for classification of methods in review texts
+model = transformers.AutoModelForSequenceClassification.from_pretrained("snsf-data/specter2-review-method")
+
+# setup the classification pipeline
+classification_pipeline = transformers.TextClassificationPipeline(
+    model=model,
+    tokenizer=tokenizer,
+    return_all_scores=True
+)
+
+# prediction for an example review sentence mentioning methods
+classification_pipeline("The applicant is using statistical and analytic approaches that are appropriate.")
+
+# prediction for an example review sentence not mentioning methods
+classification_pipeline("The project deals with an undoubtedly very interesting subject.")
+```
+
 ## Resources
 
 - [arXiv preprint](https://arxiv.org/abs/2411.16662)
