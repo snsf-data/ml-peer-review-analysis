@@ -53,6 +53,10 @@ input text data cannot be shared.
 Similarly, the subfolder `output` is a placeholder for storage of the model outputs
 with corresponding subfolder for each of the four classification approaches.
 
+The subfolder `notebooks` includes tutorials on using the publicly released
+models from [Hugging Face](https://huggingface.co/snsf-data) to classify texts
+from grant peer review reports.
+
 The fine-tuning and prompting of the models was performed locally without access
 to the internet to prevent any potential data leakage or network interference.
 
@@ -144,6 +148,10 @@ classification_pipeline("The applicant is using statistical and analytic approac
 # prediction for an example review sentence not mentioning methods
 classification_pipeline("The project deals with an undoubtedly very interesting subject.")
 ```
+
+In addition, the subfolder `notebooks` contains a detailed tutorial on deploying the
+fine-tuned models from [Hugging Face](https://huggingface.co/snsf-data) at scale,
+including data pre-processing steps.
 
 ## Resources
 
